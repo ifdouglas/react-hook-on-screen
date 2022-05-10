@@ -1,0 +1,45 @@
+{
+  "name": "react-hook-on-screen",
+  "version": "1.0.0",
+  "description": "A simple and performatic react hook to trigger a callback when a component become visible on the screen",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ifdouglas/react-hook-on-screen.git"
+  },
+  "files": [
+    "lib/**/*"
+  ],
+  "keywords": [
+    "react-hook",
+    "on-screen",
+    "callback on component show"
+  ],
+  "author": "@ifdouglas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ifdouglas/react-hook-on-screen/issues"
+  },
+  "homepage": "https://github.com/ifdouglas/react-hook-on-screen#readme",
+  "devDependencies": {
+    "@types/react": "^18.0.9",
+    "prettier": "^2.6.2",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.6.4"
+  },
+  "dependencies": {
+    "react": "^18.1.0"
+  }
+}
