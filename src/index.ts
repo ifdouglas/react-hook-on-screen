@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from 'react'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export default function useOnScreen(ref: any, triggerOnce = false) {
+export default function useOnScreen(ref: any) {
   const [isIntersecting, setIntersecting] = useState(false)
 
   const observer = useMemo(
@@ -21,10 +21,10 @@ export default function useOnScreen(ref: any, triggerOnce = false) {
   }, [])
 
   useEffect(() => {
-    if (isIntersecting && triggerOnce) {
+    if (isIntersecting) {
       observer.unobserve(ref.current)
     }
-  }, [isIntersecting, observer, ref, triggerOnce])
+  }, [isIntersecting, observer, ref])
 
   return isIntersecting
 }
