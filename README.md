@@ -1,3 +1,22 @@
 # react-hook-on-screen
 
 A simple and performatic react hook that returns a true boolean value when a component become visible on the screen
+
+
+## Example
+
+```
+import { createRef, useEffect } from 'react'
+import useOnScreen from 'react-hook-on-screen'
+
+const ref = createRef<HTMLDivElement>()
+const isVisible = useOnScreen(ref)
+
+useEffect(() => {
+  console.log('the div is visible?', isVisible)
+}, [isVisible])
+
+<div ref={ref}>
+  react-hook-on-screen
+</div>
+```
