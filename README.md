@@ -5,7 +5,7 @@ A simple and performatic react hook that returns a true boolean value when a com
 
 ## Example
 
-```
+```typescript
 import { createRef, useEffect } from 'react'
 import useOnScreen from 'react-hook-on-screen'
 
