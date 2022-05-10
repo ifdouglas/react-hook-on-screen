@@ -1,6 +1,6 @@
 {
   "name": "react-hook-on-screen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple and performatic react hook to trigger a callback when a component become visible on the screen",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
