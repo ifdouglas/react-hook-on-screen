@@ -13,7 +13,7 @@ const ref = createRef<HTMLDivElement>()
 const isVisible = useOnScreen(ref)
 
 useEffect(() => {
-  console.log('the div is visible?', isVisible)
+  console.log('Is this visible?', isVisible)
 }, [isVisible])
 
 <div ref={ref}>
